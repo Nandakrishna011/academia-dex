@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import Card from "@/components/ui/Card";
 import { User, Mail, Phone } from "lucide-react";
 import { BookOpen, BarChart3, XCircle, CheckCircle } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Dashboard() {
   const router = useRouter();
@@ -118,10 +119,20 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="p-4 md:p-6 space-y-6 bg-transparent min-h-screen">
+    <motion.div 
+      initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="p-4 md:p-6 space-y-6 bg-transparent min-h-screen"
+    >
 
       {/* 👤 PROFILE */}
-      <Card className="p-5 space-y-2">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+      >
+        <Card className="p-5 space-y-2">
         <h2 className="text-2xl font-bold">
           {student.name || "N/A"}
         </h2>
@@ -142,12 +153,18 @@ export default function Dashboard() {
           </span>
         </div>
       </Card>
+      </motion.div>
 
       {/* 📊 GRAPH + DETAILS GRID */}
       <div className="grid grid-cols-2 gap-3">
 
         {/* Attendance Graph */}
-        <Card className="p-4 flex flex-col items-center justify-center aspect-square hover:shadow-md transition">
+        <motion.div
+           initial={{ opacity: 0, y: 20 }}
+           animate={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.4, delay: 0.2 }}
+        >
+        <Card className="h-full p-4 flex flex-col items-center justify-center aspect-square hover:shadow-md transition">
           <p className="text-xs mb-2 uppercase tracking-wide" style={{ color: "var(--muted)", filter: "brightness(0.8)" }}>
             Attendance
           </p>
@@ -155,9 +172,15 @@ export default function Dashboard() {
             <Circle value={overallAttendance} />
           </div>
         </Card>
+        </motion.div>
 
         {/* Marks Graph */}
-        <Card className="p-4 flex flex-col items-center justify-center aspect-square hover:shadow-md transition">
+        <motion.div
+           initial={{ opacity: 0, y: 20 }}
+           animate={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.4, delay: 0.3 }}
+        >
+        <Card className="h-full p-4 flex flex-col items-center justify-center aspect-square hover:shadow-md transition">
           <p className="text-xs mb-2 uppercase tracking-wide" style={{ color: "var(--muted)", filter: "brightness(0.8)" }}>
             Marks
           </p>
@@ -165,9 +188,15 @@ export default function Dashboard() {
             <Circle value={marksSummary.percent} />
           </div>
         </Card>
+        </motion.div>
 
         {/* Attendance Details */}
-        <Card className="p-3 flex flex-col justify-center aspect-square hover:shadow-md transition">
+        <motion.div
+           initial={{ opacity: 0, y: 20 }}
+           animate={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.4, delay: 0.4 }}
+        >
+        <Card className="h-full p-3 flex flex-col justify-center aspect-square hover:shadow-md transition">
 
           <p className="text-xs mb-2 uppercase tracking-wide" style={{ color: "var(--muted)", filter: "brightness(0.8)" }}>
             Attendance
@@ -208,9 +237,15 @@ export default function Dashboard() {
           </div>
 
         </Card>
+        </motion.div>
 
         {/* Marks Details */}
-        <Card className="p-3 flex flex-col justify-center items-center text-center aspect-square hover:shadow-md transition">
+        <motion.div
+           initial={{ opacity: 0, y: 20 }}
+           animate={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.4, delay: 0.5 }}
+        >
+        <Card className="h-full p-3 flex flex-col justify-center items-center text-center aspect-square hover:shadow-md transition">
 
           <p className="text-xs mb-2 uppercase tracking-wide" style={{ color: "var(--muted)", filter: "brightness(0.8)" }}>
             Marks
@@ -229,6 +264,7 @@ export default function Dashboard() {
           </div>
 
         </Card>
+        </motion.div>
 
       </div>
 
@@ -236,6 +272,11 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 gap-4">
 
         {/* Faculty Advisor */}
+        <motion.div
+           initial={{ opacity: 0, x: -20 }}
+           animate={{ opacity: 1, x: 0 }}
+           transition={{ duration: 0.4, delay: 0.6 }}
+        >
         <Card className="p-4 flex flex-col justify-between hover:shadow-md transition">
 
           <div className="flex items-center gap-3">
@@ -268,8 +309,14 @@ export default function Dashboard() {
           </div>
 
         </Card>
+        </motion.div>
 
         {/* Academic Advisor */}
+        <motion.div
+           initial={{ opacity: 0, x: -20 }}
+           animate={{ opacity: 1, x: 0 }}
+           transition={{ duration: 0.4, delay: 0.7 }}
+        >
         <Card className="p-4 flex flex-col justify-between hover:shadow-md transition">
 
           <div className="flex items-center gap-3">
@@ -302,9 +349,10 @@ export default function Dashboard() {
           </div>
 
         </Card>
+        </motion.div>
 
       </div>
 
-    </div>
+    </motion.div>
   );
 }

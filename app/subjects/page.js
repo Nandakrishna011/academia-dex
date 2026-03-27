@@ -35,7 +35,7 @@ export default function Subjects() {
     <div className="p-4 md:p-6 bg-transparent min-h-screen">
 
       {/* Header */}
-      <h1 className="text-xl md:text-2xl font-bold mb-4">
+      <h1 className="text-xl md:text-2xl font-bold mb-4 text-white">
         Course List
       </h1>
 

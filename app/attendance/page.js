@@ -76,7 +76,7 @@ export default function Attendance() {
 
       {/* HEADER */}
       <div className="flex items-center justify-between mb-4">
-        <h1 className="text-xl md:text-2xl font-bold">
+        <h1 className="text-xl md:text-2xl font-bold text-white">
           Attendance Overview
         </h1>
 

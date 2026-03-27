@@ -96,7 +96,7 @@ export default function Marks() {
       {/* HEADER */}
       <div className="flex items-center gap-2 mb-6">
         <BarChart3 className="w-5 h-5" style={{ color: "var(--accent-fg)" }} />
-        <h1 className="text-xl md:text-2xl font-semibold tracking-tight" style={{ color: "var(--accent-fg)", textShadow: "0 2px 10px rgba(255,255,255,0.1)" }}>
+        <h1 className="text-xl md:text-2xl font-semibold tracking-tight text-white" style={{ textShadow: "0 2px 10px rgba(255,255,255,0.1)" }}>
           Marks Overview
         </h1>
       </div>

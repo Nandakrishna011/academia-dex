@@ -77,7 +77,7 @@ export default function Timetable() {
       {/* HEADER */}
       <div className="flex justify-between items-start mb-6">
         <div>
-          <h1 className="text-xl md:text-2xl font-bold" style={{ color: "var(--accent-fg)", textShadow: "0 2px 10px rgba(255,255,255,0.1)" }}>
+          <h1 className="text-xl md:text-2xl font-bold text-white" style={{ textShadow: "0 2px 10px rgba(255,255,255,0.1)" }}>
             Day Order Timetable
           </h1>
 

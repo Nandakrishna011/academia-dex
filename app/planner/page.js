@@ -59,7 +59,7 @@ export default function Planner() {
       <div className="max-w-screen-xl mx-auto p-4 md:p-6 pb-28">
 
         {/* Header */}
-        <h1 className="text-lg md:text-2xl font-bold mb-4 break-words" style={{ color: "var(--accent-fg)", textShadow: "0 2px 10px rgba(255,255,255,0.1)" }}>
+        <h1 className="text-lg md:text-2xl font-bold mb-4 break-words text-white" style={{ textShadow: "0 2px 10px rgba(255,255,255,0.1)" }}>
           Academic Planner 2026
         </h1>
 
