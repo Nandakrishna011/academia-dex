@@ -4,7 +4,7 @@ import { useState } from "react";
 import QRCode from "react-qr-code";
 
 export default function SharePage() {
-  const link = "https://academiadex.vercel.app/";
+  const link = "https://academia-dex.vercel.app/";
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
