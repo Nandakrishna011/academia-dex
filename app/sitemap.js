@@ -5,6 +5,9 @@ export default function sitemap() {
 
   return [
     { url: `${baseUrl}/` },
+    { url: `${baseUrl}/dashboard` },
+    { url: `${baseUrl}/attendance` },
+    { url: `${baseUrl}/marks` },
     { url: `${baseUrl}/timetable` },
     { url: `${baseUrl}/planner` },
   ];
