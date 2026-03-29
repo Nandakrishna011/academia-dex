@@ -6,5 +6,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
+    sitemap: "https://academia-dex.vercel.app/sitemap.xml",
   };
 }
