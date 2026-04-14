@@ -122,7 +122,7 @@
       {"date":"2026-04-20","day":"Monday","dayOrder":5},
       {"date":"2026-04-21","day":"Tuesday","dayOrder":1},
       {"date":"2026-04-22","day":"Wednesday","dayOrder":2},
-      {"date":"2026-04-23","day":"Thursday","dayOrder":3},
+      {"date":"2026-04-23","day":"Thursday","holiday":"Election day / Fucking Janesh","dayOrder":null},
       {"date":"2026-04-24","day":"Friday","dayOrder":4},
       {"date":"2026-04-25","day":"Saturday","holiday":"Weekend","dayOrder":null},
       {"date":"2026-04-26","day":"Sunday","holiday":"Weekend","dayOrder":null},
