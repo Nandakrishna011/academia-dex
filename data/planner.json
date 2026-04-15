@@ -122,23 +122,23 @@
       {"date":"2026-04-20","day":"Monday","dayOrder":5},
       {"date":"2026-04-21","day":"Tuesday","dayOrder":1},
       {"date":"2026-04-22","day":"Wednesday","dayOrder":2},
-      {"date":"2026-04-23","day":"Thursday","holiday":"Election day / Fucking Janesh","dayOrder":null},
-      {"date":"2026-04-24","day":"Friday","dayOrder":4},
+      {"date":"2026-04-23","day":"Thursday","holiday":"Election day / JAI TVK","dayOrder":null},
+      {"date":"2026-04-24","day":"Friday","dayOrder":3},
       {"date":"2026-04-25","day":"Saturday","holiday":"Weekend","dayOrder":null},
       {"date":"2026-04-26","day":"Sunday","holiday":"Weekend","dayOrder":null},
-      {"date":"2026-04-27","day":"Monday","dayOrder":5},
-      {"date":"2026-04-28","day":"Tuesday","dayOrder":1},
-      {"date":"2026-04-29","day":"Wednesday","dayOrder":2},
-      {"date":"2026-04-30","day":"Thursday","dayOrder":3}
+      {"date":"2026-04-27","day":"Monday","dayOrder":4},
+      {"date":"2026-04-28","day":"Tuesday","dayOrder":5},
+      {"date":"2026-04-29","day":"Wednesday","dayOrder":1},
+      {"date":"2026-04-30","day":"Thursday","dayOrder":2}
     ],
 
     "May":[
       {"date":"2026-05-01","day":"Friday","holiday":"May Day","dayOrder":null},
       {"date":"2026-05-02","day":"Saturday","holiday":"Weekend","dayOrder":null},
       {"date":"2026-05-03","day":"Sunday","holiday":"Weekend","dayOrder":null},
-      {"date":"2026-05-04","day":"Monday","dayOrder":4},
-      {"date":"2026-05-05","day":"Tuesday","dayOrder":5},
-      {"date":"2026-05-06","day":"Wednesday","event":"Last Working Day","dayOrder":1},
+      {"date":"2026-05-04","day":"Monday","dayOrder":3},
+      {"date":"2026-05-05","day":"Tuesday","dayOrder":4},
+      {"date":"2026-05-06","day":"Wednesday","event":"Last Working Day","dayOrder":5},
       {"date":"2026-05-28","day":"Thursday","holiday":"Bakrid","dayOrder":null}
     ],
 
